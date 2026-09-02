@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - North Star Bakery</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/bakery-logo_c.png" alt="North Star Bakery logo">
+        <h1>North Star Bakery</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Inquiries &amp; Pre-Order Requests</h2>
+            <p>Have a question or want to place a pre-order? Fill out the form below and our team will get back to you.</p>
+
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <p>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Please enter your name using letters only" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Details</legend>
+                    <p>
+                        <label for="pickup-date">Pickup Date:</label><br>
+                        <input type="date" id="pickup-date" name="pickup-date" required>
+                    </p>
+                    <p>
+                        <label for="request-type">Request Type:</label><br>
+                        <select id="request-type" name="request-type" required>
+                            <option value="" disabled selected>Select a request type</option>
+                            <option value="preorder">Pre-Order</option>
+                            <option value="question">General Question</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="item-details">Item Details:</label><br>
+                        <textarea id="item-details" name="item-details" rows="5" cols="40" required></textarea>
+                    </p>
+                    <p>
+                        <label for="allergy-notes">Allergy Notes (if applicable):</label><br>
+                        <textarea id="allergy-notes" name="allergy-notes" rows="3" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Request</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Location</h2>
+            <p>123 Main Street, Bigtown, KS</p>
+        </section>
+
+        <section>
+            <h2>Hours of Operation</h2>
+            <p>Monday - Saturday: 7:00 AM - 4:00 PM</p>
+            <p>Sunday: 9:00 AM - 2:00 PM</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery</p>
+    </footer>
+
+</body>
+</html>
